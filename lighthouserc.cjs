@@ -4,8 +4,8 @@ module.exports = {
       staticDistDir: "./dist",
       url: [
         "http://localhost:4321/",
-        "http://localhost:4321/feed/5-day-themes-system/",
-        "http://localhost:4321/now/",
+        "http://localhost:4321/blog/",
+        "http://localhost:4321/blog/2-example-post/",
       ],
       numberOfRuns: 3,
     },
