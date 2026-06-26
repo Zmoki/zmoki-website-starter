@@ -25,9 +25,11 @@ Then set the domain in two more places:
 - **`astro.config.mjs`** → `site:` (used for canonical URLs, RSS, sitemap)
 - **`public/robots.txt`** → the `Sitemap:` line
 
-## 2. Palette
+## 2. Palette & typography
 
 The starter ships a neutral palette. Re-skin by editing the hex values in **`src/design-tokens.mjs`** (keep the token names). Preview at `/-/astro/brand/color/`. The favicon at `public/favicon.svg` uses the same colors — swap it for your own.
+
+Type is three Google Fonts wired into Tailwind's `font-sans` / `font-serif` / `font-mono` families (serif headings, sans body, mono labels). To change them, run **`/brand-typography`** — it walks the full swap (Tailwind families, both layout font links, and the brand specimen). Preview at `/-/astro/brand/typography/`.
 
 ## 3. Content
 
