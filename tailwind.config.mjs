@@ -2,6 +2,9 @@ import { colors as brandColors } from "./src/design-tokens.mjs";
 import twColors from "tailwindcss/colors";
 import plugin from "tailwindcss/plugin";
 
+// Headings (h1–h6 + wordmark) are set in the serif family.
+const headingFontStack = "'Noto Serif', Georgia, serif";
+
 // The monochrome ink used for text, borders, fills, and prose. Sourced from
 // the Tailwind neutral palette (also available as `zmoki-neutral-900`).
 const ink = twColors.neutral[900];
@@ -67,7 +70,7 @@ export default {
             "--tw-prose-bold": ink,
             "--tw-prose-links": ink,
             "h1, h2, h3, h4, h5, h6": {
-              fontFamily: "'Space Grotesk', system-ui, sans-serif",
+              fontFamily: headingFontStack,
             },
             a: {
               "text-decoration": "none",
@@ -89,10 +92,12 @@ export default {
           },
         },
       }),
+      // Brand type families (variable, from Google Fonts) — utilities
+      // font-sans / font-serif / font-mono. These also feed the prose layer.
       fontFamily: {
-        sans: ["Google Sans Flex", "system-ui", "sans-serif"],
-        heading: ["Space Grotesk", "system-ui", "sans-serif"],
-        mono: ["Space Mono", "ui-monospace", "monospace"],
+        sans: ["Noto Sans", "system-ui", "sans-serif"],
+        serif: ["Noto Serif", "Georgia", "serif"],
+        mono: ["Noto Sans Mono", "ui-monospace", "monospace"],
       },
       // Brand color tokens live in src/design-tokens.mjs (single source
       // of truth, also consumed by the /-/astro/brand/ reference page).
@@ -108,7 +113,7 @@ export default {
     plugin(({ addBase }) => {
       addBase({
         "h1, h2, h3, h4, h5, h6": {
-          fontFamily: "'Space Grotesk', system-ui, sans-serif",
+          fontFamily: headingFontStack,
         },
         a: {
           "text-decoration": "none",

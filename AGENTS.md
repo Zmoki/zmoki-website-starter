@@ -20,7 +20,7 @@ When starting a new site from this template, see **`SETUP.md`** for the checklis
 | Language            | TypeScript                                                     | via Astro    |
 | Styling             | Tailwind CSS + @tailwindcss/typography                         | ^3           |
 | Content             | MDX via @astrojs/mdx                                           | —            |
-| Fonts               | Space Grotesk (headings), Google Sans Flex (body), Space Mono  | Google Fonts |
+| Fonts               | Noto Serif (headings), Noto Sans (body), Noto Sans Mono        | Google Fonts |
 | Analytics           | PostHog                                                        | posthog-js   |
 | Email/Forms         | Brevo                                                          | —            |
 | OG images           | Puppeteer (script)                                             | —            |
@@ -35,7 +35,10 @@ Dev server default port is **4321**. When running multiple worktrees simultaneou
 PORT=$(( 4300 + $(echo "$PWD" | cksum | cut -d' ' -f1) % 100 ))
 ```
 
-A project run skill is at `.claude/skills/run/SKILL.md` — use `/run` to launch the app.
+Project skills live in `.claude/skills/`:
+
+- `/run` — launch the Astro dev server (`.claude/skills/run/SKILL.md`)
+- `/brand-typography` — swap the site's fonts end to end (`.claude/skills/brand-typography/SKILL.md`)
 
 ---
 
@@ -265,7 +268,7 @@ Flat + brutalist is enforced globally in `tailwind.config.mjs`: the `borderRadiu
 
 Set in `tailwind.config.mjs`, all using the `ink` (= `zmoki-neutral-900`) constant:
 
-- Headings (Space Grotesk), body/bold: ink
+- Headings (Noto Serif), body/bold: ink
 - Links: ink (monochrome), dotted bottom border 4px; hover inverts to a solid ink box with white text
 - `[data-external]` and `[data-resource]` links: also ink (distinguished by border, not color)
 - `[data-anchor]` links: ink, dashed bottom border 2px

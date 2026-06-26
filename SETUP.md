@@ -25,7 +25,7 @@ Then set the domain in two more places:
 - **`astro.config.mjs`** → `site:` (used for canonical URLs, RSS, sitemap)
 - **`public/robots.txt`** → the `Sitemap:` line
 
-## 2. Palette
+## 2. Palette & typography
 
 The starter is **monochrome** — templates use `zmoki-neutral` (Tailwind's grey). All of Tailwind's palettes are generated under the `zmoki-` prefix (`zmoki-red`, `zmoki-blue`, …), so to re-skin you have two options:
 
@@ -36,6 +36,8 @@ The starter is **monochrome** — templates use `zmoki-neutral` (Tailwind's grey
   3. Add the scale to `customPalettes` in `design-tokens.mjs` (there's a commented example). It becomes a `zmoki-<name>-*` utility and shows on the reference page.
 
 Preview everything at `/-/astro/brand/color/`. The favicon at `public/favicon.svg` uses the same colors — swap it for your own.
+
+Type is three Google Fonts wired into Tailwind's `font-sans` / `font-serif` / `font-mono` families (serif headings, sans body, mono labels). To change them, run **`/brand-typography`** — it walks the full swap (Tailwind families, both layout font links, and the brand specimen). Preview at `/-/astro/brand/typography/`.
 
 ## 3. Content
 
