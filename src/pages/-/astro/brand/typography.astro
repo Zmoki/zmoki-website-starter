@@ -40,7 +40,7 @@ const typeScale = [
   {
     label: "Body",
     classes: "text-lg xl:text-xl",
-    sample: "The base reading size — Google Sans Flex, set tight.",
+    sample: "The base reading size — Noto Sans, set tight.",
     usage: "Global body (BaseLayout)",
   },
 ] as const;
@@ -137,9 +137,9 @@ const linkTreatments = [
     >
     <h1 class="mt-2 text-4xl font-semibold md:text-5xl">Typography</h1>
     <p class="mt-4 max-w-2xl text-xl md:text-2xl">
-      Three faces: Space Grotesk for headings, Google Sans Flex for body, and Space Mono for labels
-      — plus a tuned <code class="font-mono">.prose</code> layer for written content. Every specimen below
-      renders with its real utility classes.
+      Three faces: Noto Serif for headings, Noto Sans for body, and Noto Sans Mono for labels — plus
+      a tuned <code class="font-mono">.prose</code> layer for written content. Every specimen below renders
+      with its real utility classes.
     </p>
   </header>
 
@@ -153,20 +153,20 @@ const linkTreatments = [
   <!-- Font pairing -->
   <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-3">
     <section class="rounded-xl border-2 border-zmoki-ink bg-zmoki-surface p-6 md:p-8">
-      <p class="font-mono text-xs uppercase tracking-normal opacity-60">Headings · font-heading</p>
-      <p class="mt-2 font-heading text-5xl font-bold">Space Grotesk</p>
-      <p class="mt-3 text-lg opacity-80">All headings (h1–h6) and the wordmark. Weights 400–700.</p>
-      <p class="mt-4 font-heading text-2xl">AaBbCc 0123 — æ ß ç</p>
+      <p class="font-mono text-xs uppercase tracking-normal opacity-60">Headings · font-serif</p>
+      <p class="mt-2 font-serif text-5xl font-bold">Noto Serif</p>
+      <p class="mt-3 text-lg opacity-80">All headings (h1–h6) and the wordmark. Weights 100–900.</p>
+      <p class="mt-4 font-serif text-2xl">AaBbCc 0123 — æ ß ç</p>
     </section>
     <section class="rounded-xl border-2 border-zmoki-ink bg-zmoki-surface p-6 md:p-8">
       <p class="font-mono text-xs uppercase tracking-normal opacity-60">Body · font-sans</p>
-      <p class="mt-2 text-5xl font-semibold">Google Sans Flex</p>
-      <p class="mt-3 text-lg opacity-80">Body copy and prose. Variable weight, 400–700.</p>
+      <p class="mt-2 font-sans text-5xl font-semibold">Noto Sans</p>
+      <p class="mt-3 text-lg opacity-80">Body copy and prose. Variable weight, 100–900.</p>
       <p class="mt-4 font-sans text-2xl">AaBbCc 0123 — æ ß ç</p>
     </section>
     <section class="rounded-xl border-2 border-zmoki-ink bg-zmoki-surface p-6 md:p-8">
       <p class="font-mono text-xs uppercase tracking-normal opacity-60">Labels · font-mono</p>
-      <p class="mt-2 font-mono text-4xl font-bold">Space Mono</p>
+      <p class="mt-2 font-mono text-4xl font-bold">Noto Sans Mono</p>
       <p class="mt-3 text-lg opacity-80">
         Eyebrows, dates, nav, footer, buttons — always uppercase.
       </p>
@@ -318,8 +318,9 @@ const linkTreatments = [
     >
       <h1>The shape of a sentence</h1>
       <p>
-        Prose body is set in Google Sans Flex at <code>prose-xl</code>, with Space Grotesk headings
-        and <strong>ink-colored bold</strong>. This is a base <a href="/">internal link</a>, an
+        Prose body is set in Noto Sans at <code>prose-xl</code>, with Noto Serif headings and <strong
+          >ink-colored bold</strong
+        >. This is a base <a href="/">internal link</a>, an
         <a href="https://example.com" data-external="true">external link</a>, a
         <a href="/resources/" data-resource="true">resource link</a>, and an
         <a href="#lists" data-anchor="true">anchor link</a>.
